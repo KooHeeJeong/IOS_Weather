@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "에러", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
+        self.weatherStackView.isHidden = true
     }
     
 }
